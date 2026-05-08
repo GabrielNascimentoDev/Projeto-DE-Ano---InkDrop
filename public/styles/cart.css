@@ -1,0 +1,140 @@
+:root{
+    --black: #000000;
+    --red-font: #E10600;
+    --white: #D4D4D4;
+    --primary-font: "Work Sans", sans-serif;
+    --grey: #333333;
+}
+
+.cart{
+    display: flex;
+    color: var(--white);
+    gap: 40px;
+    justify-content: center;
+    font-family: var(--primary-font);
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.product{
+    border: 1px solid var(--white);
+    display: flex;
+    padding: 20px;
+    width: 700px;
+    img{
+        max-width: 150px;
+        margin-right: 20px;
+    }
+}
+
+.product_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product_price{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.remove_button{
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    padding: 0px;
+    font-style:italic;
+    width: 0px;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.remove_button:hover{
+    cursor: pointer;
+}
+
+.product_amount{
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-align: center;
+}
+
+.product_resume{
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    gap: 20px;
+        p{
+            font-size: 17px;
+            font-weight: bold;
+        }
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--red-font);
+    padding: 26px;
+    width: 350px;
+}
+
+.resume_title{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.btn_buy{
+    border: 1px solid var(--white);
+    background-color: transparent;
+    width: 240px;
+    color: var(--white);
+    padding: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_buy:hover{
+    cursor: pointer;
+}
+
+.resume a{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--grey);
+}
+
+#top{
+    width: 260px;
+    margin-top: 30px;
+    border: 0.5px solid rgba(209,51,51 0.5);
+}
+
+#bottom{
+    width: 260px;
+    margin-bottom: 30px;
+    color: var(--red-font);
+}

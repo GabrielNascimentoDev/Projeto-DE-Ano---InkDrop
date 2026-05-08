@@ -1,0 +1,74 @@
+:root{
+    --black: #000000;
+    --red-font: #E10600;
+    --white: #D4D4D4;
+    --primary-font: "Work Sans", sans-serif;
+    --grey: #333333;
+}
+
+.title{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 28px;
+}
+
+
+.total_collections{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+.collection{
+    position: relative; /* o card é o "pai" */
+}
+
+.collection span {
+    position: absolute; /* o texto flutua em cima */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.collection::after {
+    content: '';            /* obrigatório, mesmo vazio */
+    position: absolute;
+    inset: 0;               /* ocupa todo o espaço do pai */
+    background: rgba(0, 0, 0, 0.1); /* preto com 10% de opacidade */
+    pointer-events: none;
+}
+
+.collection img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.collection:hover{
+    scale: 1.10;
+    transition: 0.2s;
+        #summer{
+            scale: 1.10;
+            color: #FD8A5E;
+            transition: 0.2s;
+        }
+        #winter{
+            scale: 1.10;
+            color: 	#a0e6ec;
+            transition: 0.2s;
+        }
+        span{
+            scale: 1.10;
+            color: var(--red-font);
+            transition: 0.2s;
+        }
+}
+

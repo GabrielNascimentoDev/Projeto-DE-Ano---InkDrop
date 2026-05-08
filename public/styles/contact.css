@@ -1,0 +1,76 @@
+:root{
+    --black: #000000;
+    --red-font: #E10600;
+    --white: #D4D4D4;
+    --primary-font: "Work Sans", sans-serif;
+    --grey: #333333;
+}
+
+.general_contact{
+    display: flex;
+    color: var(--white);
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-family: var(--primary-font);
+}
+
+.information p{
+    max-width: 400px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.information h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.enviar_mensagem h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.enviar_mensagem{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.forms input{
+    width: 500px;
+    height: 25px;
+    padding: 5px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+}
+
+#mensagem{
+    height: 200px;
+}
+
+.forms button{
+    width: 512px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--red-font);
+    margin-bottom: 20px;
+}
+
+.forms button:hover{
+    cursor: pointer;
+    background-color: var(--grey);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+

@@ -1,0 +1,405 @@
+:root{
+    --black: #000000;
+    --red-font: #E10600;
+    --white: #D4D4D4;
+    --primary-font: "Work Sans", sans-serif;
+    --grey: #333333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--black);
+}
+
+.fundations{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin: 30px 200px 15px 100px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.search{
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: transparent;
+        .search_img{
+            margin-right: 20px;
+            width: 15px;
+        }
+}
+
+.search_button{
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.search_input{
+    padding: 15px 300px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 2px;
+    text-align:center;
+    border: none;
+    color: white;
+    font-family: var(--primary-font);
+    background-color: transparent;
+}
+
+.header_links{
+    display: flex;
+    gap: 19px;
+    margin-top: 40px;
+      
+}
+
+
+.header_navigation{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    font-size: 15px;
+        .header_navigation_item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-family: var(--primary-font);
+            color: var(--red-font);
+            height: 30px;
+            width: 90px;
+        }
+}
+
+.header_navigation_item:hover{
+    background-color: #4E4A4A;
+    transition: 0.5s;
+}
+
+ .slider {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background: #111;
+  }
+ 
+  .track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.77, 0, 0.18, 1);
+  }
+ 
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+ 
+.slide:nth-child(1) { background: url('../assets/stussy-banner-correct.png') center/cover no-repeat; }
+.slide:nth-child(2) { background: url('../assets/nocta-banner.webp') center/cover no-repeat; }
+.slide:nth-child(3) { background: url('../assets/high-banner.webp') center/cover no-repeat; }
+ 
+
+  .slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+      rgba(0,0,0,0.35) 0%,
+      transparent 40%,
+      transparent 60%,
+      rgba(0,0,0,0.35) 100%
+    );
+  }
+ 
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .arrow:hover { background: #d42020; border-color: #d42020; }
+  .arrow-prev { left: 12px; }
+  .arrow-next { right: 12px; }
+ 
+  .dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 7px;
+    z-index: 10;
+  }
+  .dot {
+    width: 28px;
+    height: 3px;
+    background: rgba(255,255,255,0.25);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .dot.active::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #d42020;
+    animation: prog 5s linear forwards;
+  }
+  @keyframes prog { from { width: 0; } to { width: 100%; } }
+
+.main_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    font-family: var(--primary-font);
+}
+
+.total_cards {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(2, 1fr); 
+    grid-template-rows: auto auto;
+    gap: 16px;
+    margin: 40px auto 40px;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.card {
+    position: relative;
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: var(--red-font); 
+    transform: translateY(-3px);
+}
+
+.card-brand {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; 
+    background: var(--red-font);
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+.card img {
+    height: 300px;    /* altura fixa — ajusta esse número ao seu gosto */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-info {
+    padding: 14px 12px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-name {
+    color: var(--white);
+    font-size: 12px;
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-price {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--primary-font);
+}
+
+.card_link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.card_link img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;  
+    display: block;
+    background: #f5f5f5;   
+    padding: 16px;       
+    transition: transform 0.4s ease;
+   
+}
+
+
+.card_link:hover img {
+    transform: scale(1.04); 
+}
+ 
+
+.card_overlay {
+    position: absolute;
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card_link:hover .card_overlay {
+    opacity: 1;
+}
+
+.card_overlay_text {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    border: 1px solid white;
+    padding: 10px 22px;
+}
+
+.button_more {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 120px;
+    border-radius: 10px;
+        a{
+            color: var(--red-font);
+            font-size: 14px;
+            font-weight: 700;
+            font-family: var(--primary-font);
+        }
+}
+
+.button_more:hover{
+    background-color: var(--grey);
+    width: 350px;
+    border: solid 2px var(--red-font);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 40px;
+    background: #050505;
+}
+ 
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px 30px;
+}
+ 
+.footer_brand {
+    max-width: 200px;
+}
+ 
+.footer_logo {
+    width: 120px;
+    margin-bottom: 12px;
+    display: block;
+}
+ 
+.footer_slogan {
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    font-family: var(--primary-font);
+}
+ 
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.footer_heading {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-family: var(--primary-font);
+}
+ 
+.footer_link {
+    color: rgba(255,255,255,0.45);
+    font-size: 13px;
+    font-family: var(--primary-font);
+    transition: color var(--transition);
+}
+ 
+.footer_link:hover {
+    color: var(--red-font);
+}
+ 
+.footer_bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+    padding: 16px 40px;
+}
+ 
+.footer_bottom p {
+    color: rgba(255,255,255,0.2);
+    font-size: 12px;
+    font-family: var(--primary-font);
+}
+
+@media (max-width: 768px) {
+    .total_cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding: 0 16px;
+    }
+
+}
+
+
+
+

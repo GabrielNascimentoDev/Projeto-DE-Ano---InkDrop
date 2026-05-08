@@ -1,0 +1,182 @@
+/* ================================================================
+   INKDROP — auth.css
+   Estilos das telas de autenticação (login, cadastro, etc.)
+================================================================ */
+
+.auth-body {
+    background-color: #000;
+    font-family: var(--primary-font);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo no topo */
+.auth-logo {
+    margin: 40px 0 30px;
+}
+
+.auth-logo img {
+    width: 160px;
+}
+
+/* Caixa central do formulário */
+.auth-container {
+    width: 100%;
+    max-width: 440px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+/* Título LOGIN / CADASTRO */
+.auth-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 32px;
+    font-family: var(--primary-font);
+}
+
+/* Label dos campos */
+.auth-label {
+    display: block;
+    color: var(--red-font);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin-bottom: 6px;
+}
+
+/* Campos de input */
+.auth-input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #f5f5f5;
+    border: none;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    color: #111;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease;
+}
+
+.auth-input:focus {
+    box-shadow: 0 0 0 2px var(--red-font);
+}
+
+/* Mensagem de erro do campo */
+.auth-error {
+    color: var(--red-font);
+    font-size: 12px;
+    font-family: var(--primary-font);
+    margin-top: -16px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+/* Link esqueci minha senha */
+.auth-forgot {
+    display: block;
+    text-align: right;
+    color: rgba(255,255,255,0.4);
+    font-size: 11px;
+    font-family: var(--primary-font);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: -14px;
+    margin-bottom: 24px;
+    transition: color 0.2s ease;
+}
+
+.auth-forgot:hover {
+    color: var(--red-font);
+}
+
+/* Botão principal */
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--red-font);
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-transform: uppercase;
+}
+
+.auth-btn:hover {
+    background: #c00;
+}
+
+/* Link inferior (ex: "já tem conta?") */
+.auth-switch {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+    font-family: var(--primary-font);
+}
+
+.auth-switch a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.auth-switch a:hover {
+    color: var(--red-font);
+}
+
+/* Botão secundário — para ações menos importantes */
+.auth-btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    color: rgba(255,255,255,0.4);
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    border: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.auth-btn-secondary:hover {
+    border-color: white;
+    color: white;
+}
+
+/* Mensagem de sucesso */
+.auth-message {
+    display: block;
+    color: #4ade80;
+    font-size: 13px;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.auth-description {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    font-family: var(--primary-font);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
