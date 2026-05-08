@@ -1,28 +1,30 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
-    return view ('home');
-}) -> name('home');
+    return view('home');
+})->name('home');
 
-Route::get('/products', function(){
-    return view ('products');
-}) -> name('products');
+Route::get('/carrinho', function(){
+    return view('cart');
+})->name('cart');
 
-Route:: get('/cart', function(){
-    return view ('cart');
-}) -> name('cart');
+Route::get('/colecoes', function(){
+    return view('collections');
+})->name('collections');
 
-Route:: get('/collections', function(){
-    return view ('collections');
-}) -> name ('collections');
+Route::get('/contato', function(){
+    return view('contact');
+})->name('contact');
 
-Route:: get('/contact', function(){
-    return view ('contact');
-}) -> name('contact');
+Route::get('/produtos', [ProductController::class, 'index'])
+     ->name('products');
 
+Route::get('/produtos/{product}', [ProductController::class, 'show'])
+     ->name('product.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
