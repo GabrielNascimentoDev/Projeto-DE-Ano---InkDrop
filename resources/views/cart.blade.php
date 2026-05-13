@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho InkDrop</title>
   <link rel="stylesheet" href="{{ asset('styles/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +40,6 @@
         </section>
         </div>
     </main>
-    @incude('partials.footer')
+    @include('partials.footer')
 </body>
 </html>

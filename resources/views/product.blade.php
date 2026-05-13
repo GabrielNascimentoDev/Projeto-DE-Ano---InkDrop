@@ -48,13 +48,11 @@
 
                 <hr class="product-divider">
 
-                {{-- Descrição --}}
                 @if($product->description)
                     <p class="product-description">{{ $product->description }}</p>
                     <hr class="product-divider">
                 @endif
 
-                {{-- Formulário para adicionar ao carrinho --}}
                 <form class="product-form" method="POST" action="#">
                     @csrf
 
@@ -73,7 +71,6 @@
                         >
                     </div>
 
-                    {{-- Estoque disponível --}}
                     @if($product->stock > 0)
                         <button type="submit" class="product-btn">
                             ADICIONAR AO CARRINHO

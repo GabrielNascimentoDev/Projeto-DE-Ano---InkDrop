@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato InkDrop</title>
     <link rel="stylesheet" href="{{ asset ('styles/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
             </div>
             <div class="enviar_mensagem">
                 <h2>Envie uma Mensagem</h2>
-                <form action="*" class="forms">
+                <form action="#" class="forms">
                     <label for="name">Seu Nome</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome...">
                     <label for="email">Seu E-mail</label>
