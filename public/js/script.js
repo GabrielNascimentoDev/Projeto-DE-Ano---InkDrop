@@ -52,3 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.move = move;
 
 });
+
+
+function toggleMenu() {
+    document.getElementById('userDropdown').classList.toggle('active');
+}
+
+document.addEventListener('click', function(e) {
+    const menu = document.querySelector('.user_menu');
+    if (menu && !menu.contains(e.target)) {
+        document.getElementById('userDropdown').classList.remove('active');
+    }
+});

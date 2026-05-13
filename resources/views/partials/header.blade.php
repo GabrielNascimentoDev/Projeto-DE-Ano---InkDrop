@@ -6,10 +6,8 @@
 
         <div class="search">
             <div class="search_button">
-                <input type="text" placeholder="O que você está procurando?" class="search_input">
-                <button type="submit" class="search_submit">
-                    <img src="{{ asset('assets/search.png') }}" alt="Buscar" class="search_img">
-                </button>
+                <input type="text" placeholder="O que você está procurando?" class="search_input" >
+               
             </div>
         </div>
 
@@ -18,14 +16,24 @@
         <img src="{{ asset('assets/cart.png') }}" alt="Carrinho" class="links_img">
     </a>
 
-    {{-- 
-        @auth → só renderiza se o usuário estiver logado
-        @guest → só renderiza se o usuário NÃO estiver logado
-    --}}
     @auth
-        <a href="{{ route('dashboard') }}">
-            <img src="{{ asset('assets/account.png') }}" alt="Minha conta" class="links_img">
-        </a>
+        <div class="user_menu">
+            <button class="user_menu_btn" onclick="toggleMenu()">
+                <img src="{{ asset('assets/account.png') }}" alt="Minha conta" class="links_img">
+            </button>
+
+            <div class="user_dropdown" id="userDropdown">
+                <span class="user_name">Olá, {{ Auth::user()->name }}</span>
+                <hr class="dropdown_divider">
+                <a href="{{ route('dashboard') }}" class="dropdown_item">Minha Conta</a>
+                <a href="#" class="dropdown_item">Meus Pedidos</a>
+                <hr class="dropdown_divider">
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="dropdown_item dropdown_logout">Sair</button>
+                </form>
+            </div>
+        </div>
     @else
         <a href="{{ route('login') }}">
             <img src="{{ asset('assets/account.png') }}" alt="Entrar" class="links_img">
@@ -40,3 +48,5 @@
         <a href="{{ route('contact') }}" class="header_navigation_item">CONTATO</a>
     </nav>
 </header>
+
+<script src="{{asset('script.js')}}"></script>
