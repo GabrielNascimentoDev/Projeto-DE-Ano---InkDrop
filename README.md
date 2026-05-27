@@ -1,58 +1,133 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=180&section=header&text=🖋️%20InkDrop&fontSize=50&fontColor=e94560&fontAlignY=38&desc=E-commerce%20desenvolvido%20com%20Laravel&descAlignY=58&descSize=18&animation=fadeIn"/>
 
-## About Laravel
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://php.net)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
+[![Blade](https://img.shields.io/badge/Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)](#)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](#)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 💡 A ideia por trás do projeto
 
-## Learning Laravel
+Você já tentou vender ou comprar algo online e sentiu que a plataforma era confusa, lenta ou simplesmente genérica demais? O **InkDrop** nasceu dessa frustração.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+O projeto foi desenvolvido como **Projeto de Conclusão de Ano** com o objetivo de criar uma solução de e-commerce completa, funcional e de fácil uso — do cadastro do produto até o momento em que o cliente finaliza a compra.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+> *"Queria entender como funciona um sistema real de ponta a ponta. Não só o front bonito, mas o que acontece por baixo dos panos."*
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## 🎯 Qual dor ele resolve?
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+| Problema | Solução do InkDrop |
+|---|---|
+| Lojas improvisadas em grupos de WhatsApp | Catálogo organizado com página por produto |
+| Sem controle de estoque ou pedidos | Painel administrativo para gestão |
+| Processo de compra confuso | Fluxo simples: catálogo → carrinho → checkout |
+| Dependência de plataformas pagas | Sistema próprio e customizável |
+
+---
+
+## ✨ Funcionalidades
+
+- 🛍️ **Catálogo de produtos** com listagem e página de detalhe
+- 🛒 **Carrinho de compras** com adição, remoção e atualização de itens
+- 👤 **Autenticação de usuários** — cadastro, login e sessão
+- 🔐 **Painel administrativo** para gerenciar produtos e pedidos
+- 📦 **Controle de estoque** integrado ao fluxo de vendas
+- 📱 **Layout responsivo** para acesso em qualquer dispositivo
+
+---
+
+## 🧠 O que aprendi construindo isso
+
+Este foi meu primeiro projeto full-stack de verdade. Alguns dos conceitos que precisei dominar:
+
+- **MVC com Laravel** — entender como Model, View e Controller se comunicam
+- **Eloquent ORM** — consultas ao banco sem escrever SQL puro
+- **Migrations e Seeders** — controle de versão do banco de dados
+- **Autenticação com Laravel Breeze/Auth** — sistema de login seguro
+- **Blade Templates** — reutilização de layouts e componentes de view
+- **Rotas RESTful** — organização das URLs da aplicação
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia | Papel no projeto |
+|---|---|
+| **Laravel** | Framework PHP — estrutura MVC, rotas, autenticação |
+| **Blade** | Template engine — renderização das views |
+| **PHP** | Linguagem backend — lógica de negócio |
+| **MySQL** | Banco de dados relacional |
+| **CSS3 / JS** | Estilização e interatividade no front |
+
+---
+
+## 🚀 Como rodar localmente
 
 ```bash
-composer require laravel/boost --dev
+# 1. Clone o repositório
+git clone https://github.com/GabrielNascimentoDev/Projeto-DE-Ano---InkDrop.git
+cd Projeto-DE-Ano---InkDrop
 
-php artisan boost:install
+# 2. Instale as dependências PHP
+composer install
+
+# 3. Instale as dependências JS
+npm install && npm run dev
+
+# 4. Configure o ambiente
+cp .env.example .env
+php artisan key:generate
+
+# 5. Configure o banco no .env e rode as migrations
+php artisan migrate --seed
+
+# 6. Inicie o servidor
+php artisan serve
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+> Acesse em: `http://localhost:8000`
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📁 Estrutura do projeto
 
-## Code of Conduct
+```
+InkDrop/
+├── app/
+│   ├── Http/Controllers/   → Lógica de cada rota
+│   └── Models/             → Entidades do banco (Produto, Pedido, Usuário)
+├── database/
+│   ├── migrations/         → Estrutura das tabelas
+│   └── seeders/            → Dados iniciais
+├── resources/views/        → Templates Blade (HTML dinâmico)
+├── routes/web.php          → Definição das rotas
+└── public/                 → Assets públicos (CSS, JS, imagens)
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🔮 Próximos passos
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- [ ] Integração com gateway de pagamento (Stripe / Mercado Pago)
+- [ ] Sistema de avaliação de produtos
+- [ ] Filtros e busca avançada no catálogo
+- [ ] Notificações por e-mail ao cliente
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center">
+
+**Desenvolvido por [Gabriel Henrique](https://github.com/GabrielNascimentoDev) como projeto de conclusão de ano** 🎓
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f3460,50:16213e,100:1a1a2e&height=100&section=footer"/>
+
+</div>
