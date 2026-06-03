@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -53,8 +53,9 @@
                     <hr class="product-divider">
                 @endif
 
-                <form class="product-form" method="POST" action="#">
+                <form class="product-form" method="POST" action="{{ route('cart.add') }}">
                     @csrf
+<input type="hidden" name="product_id" value="{{ $product->id }}">
 
                     <div class="product-quantity">
                         <label for="quantity" class="product-quantity-label">
@@ -91,4 +92,4 @@
 
     <script src="{{ asset('js/script.js') }}"></script>
 </body>
-</html>A
+</html>

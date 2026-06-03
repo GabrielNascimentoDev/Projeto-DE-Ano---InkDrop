@@ -17,6 +17,7 @@
     </a>
 
     @auth
+        
         <div class="user_menu">
             <button class="user_menu_btn" onclick="toggleMenu()">
                 <img src="{{ asset('assets/account.png') }}" alt="Minha conta" class="links_img">
@@ -25,8 +26,12 @@
             <div class="user_dropdown" id="userDropdown">
                 <span class="user_name">Olá, {{ Auth::user()->name }}</span>
                 <hr class="dropdown_divider">
-                <a href="{{ route('dashboard') }}" class="dropdown_item">Minha Conta</a>
-                <a href="#" class="dropdown_item">Meus Pedidos</a>
+                @if(Auth::user()->is_admin)
+    <a href="{{ route('admin') }}" class="dropdown_item">Painel Admin</a>
+@else
+    <a href="{{ route('profile.edit') }}" class="dropdown_item">Minha Conta</a>
+    <a href="#" class="dropdown_item">Meus Pedidos</a>
+@endif
                 <hr class="dropdown_divider">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf

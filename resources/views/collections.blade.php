@@ -16,19 +16,19 @@
         <h1 class="title">COLEÇÕES</h1>
         <div class="total_collections">
             <div class="collection">
-                <a href="*">
+                <a href="{{ route('products', ['collection' => 'summer']) }}">
                     <img src="{{ asset('assets/collections/summer.png')  }}" alt="Coleção Summer">
                     <span id="summer">SUMMER</span>
                 </a>
             </div>
             <div class="collection">
-                <a href="*">
+                <a href="{{ route('products', ['collection' => 'winter']) }}">
                     <img src="{{ asset('assets/collections/winter.png')  }}" alt="Coleção Summer">
                     <span id="winter">WINTER</span>
                 </a>
             </div>
             <div class="collection">
-                <a href="*">
+                <a href="{{ route('products', ['collection' => 'conjuntos']) }}">
                     <img src="{{  asset('assets/collections/conjuntos.png')  }}" alt="Coleção Summer">
                     <span>CONJUNTOS</span>
                 </a>
