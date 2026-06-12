@@ -6,12 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    public function up(): void
-    {
-        Schema::table('products', function (Blueprint $table) {
-            $table->string('collection')->nullable()->after('brand');
-        });
-    }
+   public function up(): void
+{
+    Schema::table('products', function (Blueprint $table) {
+        if (!Schema::hasColumn('products', 'collection')) {
+            $table->string('collection')->nullable();
+        }
+    });
+}
 
     public function down(): void
     {
