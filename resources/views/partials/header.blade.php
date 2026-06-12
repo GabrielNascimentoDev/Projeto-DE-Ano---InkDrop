@@ -30,7 +30,7 @@
     <a href="{{ route('admin') }}" class="dropdown_item">Painel Admin</a>
 @else
     <a href="{{ route('profile.edit') }}" class="dropdown_item">Minha Conta</a>
-    <a href="#" class="dropdown_item">Meus Pedidos</a>
+    <a href="{{ route('orders') }}" class="dropdown_item">Meus Pedidos</a>
 @endif
                 <hr class="dropdown_divider">
                 <form method="POST" action="{{ route('logout') }}">

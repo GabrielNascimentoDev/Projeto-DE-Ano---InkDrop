@@ -36,7 +36,7 @@
 
             <div class="card card--destaque">
                 <span class="card-brand">STUSSY</span>
-                <a href="#" class="card_link">
+                <a href="{{route('product.show', 1)}}" class="card_link">
                     <img src="{{ asset('assets/camiseta-stussy.png') }}" alt="Camiseta Stussy SS Link Black">
                     <div class="card_overlay">
                         <span class="card_overlay_text">VER PRODUTO</span>
@@ -50,7 +50,7 @@
 
             <div class="card">
                 <span class="card-brand">VIRGIL ABLOH</span>
-                <a href="#" class="card_link">
+                <a href="{{route('product.show', 2)}}" class="card_link">
                     <img src="{{ asset('assets/camiseta-figures.png') }}" alt="Camiseta Figures of Speech White">
                     <div class="card_overlay">
                         <span class="card_overlay_text">VER PRODUTO</span>
@@ -64,7 +64,7 @@
 
             <div class="card">
                 <span class="card-brand">SUPREME</span>
-                <a href="#" class="card_link">
+                <a href="{{route('product.show', 3)}}" class="card_link">
                     <img src="{{ asset('assets/jaqueta-sup.png') }}" alt="Umbro x Supreme Jaqueta">
                     <div class="card_overlay">
                         <span class="card_overlay_text">VER PRODUTO</span>
