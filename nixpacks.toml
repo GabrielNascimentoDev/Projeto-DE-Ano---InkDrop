@@ -5,4 +5,5 @@ nixPkgs = ["php83", "php83Extensions.pdo", "php83Extensions.pdo_sqlite", "php83E
 cmds = ["composer install --no-dev", "php artisan config:clear", "php artisan migrate --force", "php artisan db:seed --class=ProductSeeder --force"]
 
 [start]
-cmd = "php -S 0.0.0.0:$PORT -t public"
+cmd = "php artisan migrate --force && php artisan db:seed --class=ProductSeeder --force && php -S 0.0.0.0:$PORT -t public public/.htrouter.php"git add .
+ 
